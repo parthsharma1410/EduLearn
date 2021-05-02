@@ -1,5 +1,5 @@
 # EduLearn
-This is an educational website which will provide the student with all the \
+This is an educational website which will provide a student with all the \
 important resources like theory notes and interactive video lectures \
 on one single platform.\
 As of now, the login and signup module are completed, and work on dashboard is going on.
