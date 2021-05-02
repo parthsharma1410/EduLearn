@@ -2,7 +2,7 @@ import React, { useRef, useState } from 'react'
 import { Form, Button, Card, Alert } from 'react-bootstrap'
 import { useAuth } from '../context/AuthContext'
 import { Link, useHistory } from 'react-router-dom'
-
+import signuppage from '../img/signuppage.svg'
 function Signup() {
     const emailRef = useRef()
     const passwordRef = useRef()
@@ -34,6 +34,9 @@ function Signup() {
     
   return (
     <div className="container">
+        <div className='flexbox'>
+            <div className='textcolumn'>
+
                 <h2 className="text-centre mb-4 heading">Sign Up</h2>
                 {error && <Alert variant="danger">{error}</Alert>}
                 <Form onSubmit={handleSubmit}>
@@ -53,6 +56,11 @@ function Signup() {
                 </Form>
         <div className='w-100 text-center mt-2'>
             Already have an account? <Link to='/signin'>SignIn</Link>
+        </div>
+            </div>
+            <div className='imagecolumn'>
+                <img src={signuppage} />
+            </div>
         </div>
     </div>
   );

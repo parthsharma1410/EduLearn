@@ -2,6 +2,7 @@ import React, { useRef, useState } from 'react'
 import { Form, Button, Card, Alert } from 'react-bootstrap'
 import { useAuth } from '../context/AuthContext'
 import { Link, useHistory } from 'react-router-dom'
+import forgotpassword from '../img/forgotpassword.svg'
 
 function ForgotPassword() {
     const emailRef = useRef()
@@ -32,6 +33,9 @@ function ForgotPassword() {
     
   return (
     <div className='container'>
+        <div className='flexbox'>
+            <div className='textcolumn'>
+
                 <h2 className="text-centre mb-4 heading">Password Reset</h2>
                 {error && <Alert variant="danger">{error}</Alert>}
                 {message && <Alert variant="success">{message}</Alert>}
@@ -47,6 +51,11 @@ function ForgotPassword() {
                 </div>
         <div className='w-100 text-center mt-2'>
             Don't have an account? <Link to='/signup'>SignUp</Link>
+        </div>
+            </div>
+            <div className='imagecolumn'>
+                <img src={forgotpassword} />
+            </div>
         </div>
     </div>
   );

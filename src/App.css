@@ -125,3 +125,22 @@ p {
   text-decoration: none;
   color: inherit;
 }
+
+.flexbox {
+  display: flex;
+}
+
+img {
+  padding-left: 20%;
+  height: 70%;
+}
+
+.imgcolumn {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.textcolumn {
+  flex-grow: 2;
+}
