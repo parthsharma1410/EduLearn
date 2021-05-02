@@ -1,5 +1,5 @@
 import React from 'react'
-import { Container } from 'react-bootstrap';
+import { Container, Nav } from 'react-bootstrap';
 import { AuthProvider } from '../context/AuthContext';
 import Signup from './Signup'
 import { BrowserRouter as Router, Switch, Route } from 'react-router-dom'
@@ -9,11 +9,12 @@ import Signin from './Signin'
 import ForgotPassword from './ForgotPassword'
 import PrivateRoute from './PrivateRoute'
 import UpdateProfile from './UpdateProfile'
+import Navigation from './Navbar'
 
 function App() {
   return (
-   
-    <Container className="d-flex align-items-center justify-content-center" style={ {minHeight: "100vh"}}>
+    <Container className="align-items-center justify-content-center" style={ {minHeight: "100vh"}}>
+      <Navigation />
       <div className="w-100" style={{ maxWidth: "400px"}}>
       <Router>
       <AuthProvider>

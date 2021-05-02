@@ -33,10 +33,8 @@ function Signup() {
     }
     
   return (
-    <>
-        <Card>
-            <Card.Body>
-                <h2 className="text-centre mb-4">Sign Up</h2>
+    <div className="container">
+                <h2 className="text-centre mb-4 heading">Sign Up</h2>
                 {error && <Alert variant="danger">{error}</Alert>}
                 <Form onSubmit={handleSubmit}>
                     <Form.Group id="email">
@@ -51,14 +49,12 @@ function Signup() {
                         <Form.Label>Confirm Password</Form.Label>
                         <Form.Control type="password" ref={passwordConfirmRef} required></Form.Control>
                     </Form.Group>
-                    <Button disabled={loading} className='w-100' type="submit">Sign Up</Button>
+                    <button disabled={loading} className='btnsubmit' type="submit">Sign Up</button>
                 </Form>
-            </Card.Body>
-        </Card>
         <div className='w-100 text-center mt-2'>
             Already have an account? <Link to='/signin'>SignIn</Link>
         </div>
-    </>
+    </div>
   );
 }
 

@@ -2,6 +2,7 @@ import React, { useRef, useState } from 'react'
 import { Form, Button, Card, Alert } from 'react-bootstrap'
 import { useAuth } from '../context/AuthContext'
 import { Link, useHistory } from 'react-router-dom'
+import '../App.css'
 
 function UpdateProfile() {
     const emailRef = useRef()
@@ -40,10 +41,9 @@ function UpdateProfile() {
     }
     
   return (
-    <>
-        <Card>
-            <Card.Body>
-                <h2 className="text-centre mb-4">Update Profile</h2>
+    <div className='container'>
+        
+                <h2 className="text-centre mb-4 heading">Update Profile</h2>
                 {error && <Alert variant="danger">{error}</Alert>}
                 <Form onSubmit={handleSubmit}>
                     <Form.Group id="email">
@@ -58,14 +58,12 @@ function UpdateProfile() {
                         <Form.Label>Confirm Password</Form.Label>
                         <Form.Control type="password" ref={passwordConfirmRef}></Form.Control>
                     </Form.Group>
-                    <Button disabled={loading} className='w-100' type="submit">Save Changes</Button>
+                    <button disabled={loading} className='btnsubmit' type="submit">Save Changes</button>
                 </Form>
-            </Card.Body>
-        </Card>
         <div className='w-100 text-center mt-2'>
-            Want to back to your dashboard? <Link to='/dashboard'>Cick here</Link>
+            To cancel making changes <Link to='/dashboard'>Cick here</Link>
         </div>
-    </>
+    </div>
   );
 }
 
