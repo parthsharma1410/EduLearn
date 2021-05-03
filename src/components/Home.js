@@ -10,7 +10,7 @@ export default function Home() {
     return (
         <div className='container'>
             <div className='flexbox'>
-                <div className='textcolumn'>
+                <div className='textcolumn animate__animated animate__fadeIn'>
                     <h2 className='heading'>Welcome to EduLearn!</h2>
                     <p className='para'>
                     Your one-stop shop for accessing premium courses, <br />
@@ -21,7 +21,7 @@ export default function Home() {
                     </p>
                 <button className='btngetstarted'><a href='/about'>Get started</a></button>
                 </div>
-                <div className='imagecolumn'>
+                <div className='imagecolumn animate__animated animate__fadeIn animate__delay-1s'>
                     <img src={mainpage} />
                 </div>
             </div>

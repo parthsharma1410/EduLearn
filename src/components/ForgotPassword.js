@@ -34,7 +34,7 @@ function ForgotPassword() {
   return (
     <div className='container'>
         <div className='flexbox'>
-            <div className='textcolumn'>
+            <div className='textcolumn animate__animated animate__fadeIn'>
 
                 <h2 className="text-centre mb-4 heading">Password Reset</h2>
                 {error && <Alert variant="danger">{error}</Alert>}
@@ -53,7 +53,7 @@ function ForgotPassword() {
             Don't have an account? <Link to='/signup'>SignUp</Link>
         </div>
             </div>
-            <div className='imagecolumn'>
+            <div className='imagecolumn animate__animated animate__fadeIn animate__delay-1s'>
                 <img src={forgotpassword} />
             </div>
         </div>

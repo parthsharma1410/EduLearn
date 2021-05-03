@@ -35,7 +35,7 @@ function Signup() {
   return (
     <div className="container">
         <div className='flexbox'>
-            <div className='textcolumn'>
+            <div className='textcolumn animate__animated animate__fadeIn'>
 
                 <h2 className="text-centre mb-4 heading">Sign Up</h2>
                 {error && <Alert variant="danger">{error}</Alert>}
@@ -58,7 +58,7 @@ function Signup() {
             Already have an account? <Link to='/signin'>SignIn</Link>
         </div>
             </div>
-            <div className='imagecolumn'>
+            <div className='imagecolumn animate__animated animate__fadeIn animate__delay-1s'>
                 <img src={signuppage} />
             </div>
         </div>

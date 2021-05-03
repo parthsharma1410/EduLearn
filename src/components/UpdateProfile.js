@@ -41,7 +41,7 @@ function UpdateProfile() {
     }
     
   return (
-    <div className='container'>
+    <div className='container animate__animated animate__fadeIn'>
         
                 <h2 className="text-centre mb-4 heading">Update Profile</h2>
                 {error && <Alert variant="danger">{error}</Alert>}

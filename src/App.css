@@ -144,3 +144,19 @@ img {
 .textcolumn {
   flex-grow: 2;
 }
+
+.imgclock {
+  padding-top: 20%;
+  padding-left: 70%;
+}
+
+@media screen and (max-width: 800px) {
+  .flexbox {
+    display: block;
+  }
+  .img {
+    padding-left: 18%;
+    height: 29%;
+    width: 128%;
+  }
+}

@@ -2,6 +2,7 @@ import React, { useState } from 'react'
 import { useAuth } from '../context/AuthContext'
 import { Card, Button, Alert } from 'react-bootstrap'
 import { Link, useHistory } from 'react-router-dom'
+import clock from '../img/clock.svg'
 
 export default function Dashboard() {
     const { currentUser, logout } = useAuth()
@@ -20,7 +21,9 @@ export default function Dashboard() {
     }
     return (
         <div className='container'>
-       
+       <div className='flexbox'>
+           <div className='textcolumn animate__animated animate__fadeIn'>
+
                 <h2 className='text-center mb-4 heading'>Dashboard</h2>
                 {error && <Alert variant="danger">{error}</Alert>}
                 Welcome to EduLearn <strong>{currentUser.email}</strong> ! <br /> We are still building the dashboard, <br /> Please visit us later :)
@@ -29,6 +32,11 @@ export default function Dashboard() {
         <div className='w-100 text-center mt-2'>
             <Button variant="link" onClick={handleLogout}>Log Out</Button>
         </div>
+           </div>
+           <div className='imagecolumn animate__animated animate__fadeIn animate__delay-1s imgclock'>
+                <img src={clock} />
+           </div>
+       </div>
         </div>
     )
 }
