@@ -1,42 +1,46 @@
-import React, { useState } from 'react'
-import { useAuth } from '../context/AuthContext'
-import { Card, Button, Alert } from 'react-bootstrap'
-import { Link, useHistory } from 'react-router-dom'
-import clock from '../img/clock.svg'
+import React, { useState } from "react";
+import { useAuth } from "../context/AuthContext";
+import { Card, Button, Alert } from "react-bootstrap";
+import { Link, useHistory } from "react-router-dom";
+import clock from "../img/clock.svg";
 
 export default function Dashboard() {
-    const { currentUser, logout } = useAuth()
-    const [error, setError] = useState('')
-    const history = useHistory()
+  const { currentUser, logout } = useAuth();
+  const [error, setError] = useState("");
+  const history = useHistory();
 
-    async function handleLogout() {
-        setError('')
+  async function handleLogout() {
+    setError("");
 
-        try {
-            await logout()
-            history.push('/')
-        } catch {
-            setError('Failed to log out')
-        }
+    try {
+      await logout();
+      history.push("/");
+    } catch {
+      setError("Failed to log out");
     }
-    return (
-        <div className='container'>
-       <div className='flexbox'>
-           <div className='textcolumn animate__animated animate__fadeIn'>
-
-                <h2 className='text-center mb-4 heading'>Dashboard</h2>
-                {error && <Alert variant="danger">{error}</Alert>}
-                Welcome to EduLearn <strong>{currentUser.email}</strong> ! <br /> We are still building the dashboard, <br /> Please visit us later :)
-                <br /> <br />
-                <button  className='btnsubmit'><a href='/updateprofile'>Update Profile</a></button>
-        <div className='w-100 text-center mt-2'>
-            <Button variant="link" onClick={handleLogout}>Log Out</Button>
+  }
+  return (
+    <div className="container">
+      <div className="flexbox">
+        <div className="textcolumn animate__animated animate__fadeIn">
+          <h2 className="text-center mb-4 heading">Dashboard</h2>
+          {error && <Alert variant="danger">{error}</Alert>}
+          Welcome to EduLearn <strong>{currentUser.email}</strong> ! <br /> We
+          are still building the dashboard, <br /> Please visit us later :)
+          <br /> <br />
+          <button className="btnsubmit">
+            <a href="/updateprofile">Update Profile</a>
+          </button>
+          <div className="w-100 text-center mt-2">
+            <Button variant="link" onClick={handleLogout}>
+              Log Out
+            </Button>
+          </div>
         </div>
-           </div>
-           <div className='imagecolumn animate__animated animate__fadeIn animate__delay-1s imgclock'>
-                <img src={clock} />
-           </div>
-       </div>
+        <div className="imagecolumn animate__animated animate__fadeIn animate__delay-1s imgclock">
+          <img src={clock} />
         </div>
-    )
+      </div>
+    </div>
+  );
 }
