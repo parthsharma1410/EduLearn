@@ -115,6 +115,19 @@ p {
   padding-right: 3%;
 }
 
+.btnsubmit2 {
+  border-radius: 5px;
+  border-style: none;
+  width: 12rem;
+  height: 2.3rem;
+  margin-right: 2%;
+  margin-left: 35%;
+  color: white;
+  background-color: rgb(108, 42, 139);
+  padding-left: 3%;
+  padding-right: 3%;
+}
+
 .btnsubmit a {
   padding: 10%;
   text-decoration: none;
@@ -122,6 +135,17 @@ p {
 }
 
 .btnsubmit a:hover {
+  text-decoration: none;
+  color: inherit;
+}
+
+.btnsubmit2 a {
+  padding: 10%;
+  text-decoration: none;
+  color: inherit;
+}
+
+.btnsubmit2 a:hover {
   text-decoration: none;
   color: inherit;
 }
@@ -148,6 +172,35 @@ img {
 .imgclock {
   padding-top: 20%;
   padding-left: 70%;
+}
+
+.card-img {
+  padding-left: 0%;
+}
+
+.card {
+  margin: 2%;
+  justify-content: center;
+  align-items: center;
+  border-radius: 20%;
+  height: 90%;
+}
+
+.card-text-2 {
+  margin-right: 50%;
+}
+
+.btnsearch {
+  border-radius: 5px;
+  border-style: none;
+  border-color: rgb(108, 42, 139);
+  width: 9rem;
+  border-style: solid;
+  height: 2.3rem;
+  color: rgb(108, 42, 139);
+  background-color: white;
+  padding-left: 3%;
+  padding-right: 3%;
 }
 
 @media screen and (max-width: 800px) {

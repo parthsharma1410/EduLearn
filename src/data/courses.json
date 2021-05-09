@@ -3,56 +3,56 @@
     {
       "name": "Python for Beginners",
       "id": "0",
-      "length": "188",
+      "length": "188 min",
       "university": "University of British Columbia",
       "topic": "Python",
-      "difficulty": "easy",
+      "difficulty": "Easy",
       "image": "https://miro.medium.com/max/840/1*RJMxLdTHqVBSijKmOO5MAg.jpeg"
     },
     {
-      "name": "Python for Beginners",
+      "name": "C++ with STL",
       "id": "1",
-      "length": "188",
-      "university": "University of British Columbia",
-      "topic": "Python",
-      "difficulty": "easy",
-      "image": "https://miro.medium.com/max/840/1*RJMxLdTHqVBSijKmOO5MAg.jpeg"
+      "length": "265 min",
+      "university": "Harvard University",
+      "topic": "C++",
+      "difficulty": "Moderate",
+      "image": "https://tse2.mm.bing.net/th?id=OIP.jj3cypYp73e_kRb0m_4QsgHaEK&pid=Api&P=0&w=1489&h=1173"
     },
     {
-      "name": "Python for Beginners",
+      "name": "UI/UX",
       "id": "2",
-      "length": "188",
-      "university": "University of British Columbia",
-      "topic": "Python",
-      "difficulty": "easy",
-      "image": "https://miro.medium.com/max/840/1*RJMxLdTHqVBSijKmOO5MAg.jpeg"
+      "length": "195",
+      "university": "New York University",
+      "topic": "Desogn",
+      "difficulty": "Easy",
+      "image": "https://tse1.mm.bing.net/th?id=OIP.9t7htXFPzrmIc-dsCkNzhwHaD5&pid=Api&P=0&w=1300&h=859"
     },
     {
-      "name": "Python for Beginners",
+      "name": "React for Beginners",
       "id": "3",
-      "length": "188",
-      "university": "University of British Columbia",
+      "length": "285",
+      "university": "Bath University",
       "topic": "Python",
-      "difficulty": "easy",
-      "image": "https://miro.medium.com/max/840/1*RJMxLdTHqVBSijKmOO5MAg.jpeg"
+      "difficulty": "Moderate",
+      "image": "https://tse1.mm.bing.net/th?id=OIP.Z9eWpRj2-B2al3bsX69ujQHaE4&pid=Api&P=0&w=1300&h=859"
     },
     {
-      "name": "Python for Beginners",
+      "name": "Database Management Systems",
       "id": "4",
-      "length": "188",
+      "length": "689",
       "university": "University of British Columbia",
-      "topic": "Python",
-      "difficulty": "easy",
-      "image": "https://miro.medium.com/max/840/1*RJMxLdTHqVBSijKmOO5MAg.jpeg"
+      "topic": "Database",
+      "difficulty": "Difficult",
+      "image": "https://tse1.mm.bing.net/th?id=OIP.ltvzNrEKyCmK29oRKMHAIwHaEK&pid=Api&P=0&w=1297&h=868"
     },
     {
-      "name": "Python for Beginners",
+      "name": "Android Development",
       "id": "5",
-      "length": "188",
-      "university": "University of British Columbia",
-      "topic": "Python",
-      "difficulty": "easy",
-      "image": "https://miro.medium.com/max/840/1*RJMxLdTHqVBSijKmOO5MAg.jpeg"
+      "length": "588",
+      "university": "University of  San Diego",
+      "topic": "Android",
+      "difficulty": "Difficult",
+      "image": "https://developer.android.com/images/social/android-developers.png"
     }
   ]
 }
