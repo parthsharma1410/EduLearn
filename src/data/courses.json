@@ -1,0 +1,58 @@
+{
+  "courseDetails": [
+    {
+      "name": "Python for Beginners",
+      "id": "0",
+      "length": "188",
+      "university": "University of British Columbia",
+      "topic": "Python",
+      "difficulty": "easy",
+      "image": "https://miro.medium.com/max/840/1*RJMxLdTHqVBSijKmOO5MAg.jpeg"
+    },
+    {
+      "name": "Python for Beginners",
+      "id": "1",
+      "length": "188",
+      "university": "University of British Columbia",
+      "topic": "Python",
+      "difficulty": "easy",
+      "image": "https://miro.medium.com/max/840/1*RJMxLdTHqVBSijKmOO5MAg.jpeg"
+    },
+    {
+      "name": "Python for Beginners",
+      "id": "2",
+      "length": "188",
+      "university": "University of British Columbia",
+      "topic": "Python",
+      "difficulty": "easy",
+      "image": "https://miro.medium.com/max/840/1*RJMxLdTHqVBSijKmOO5MAg.jpeg"
+    },
+    {
+      "name": "Python for Beginners",
+      "id": "3",
+      "length": "188",
+      "university": "University of British Columbia",
+      "topic": "Python",
+      "difficulty": "easy",
+      "image": "https://miro.medium.com/max/840/1*RJMxLdTHqVBSijKmOO5MAg.jpeg"
+    },
+    {
+      "name": "Python for Beginners",
+      "id": "4",
+      "length": "188",
+      "university": "University of British Columbia",
+      "topic": "Python",
+      "difficulty": "easy",
+      "image": "https://miro.medium.com/max/840/1*RJMxLdTHqVBSijKmOO5MAg.jpeg"
+    },
+    {
+      "name": "Python for Beginners",
+      "id": "5",
+      "length": "188",
+      "university": "University of British Columbia",
+      "topic": "Python",
+      "difficulty": "easy",
+      "image": "https://miro.medium.com/max/840/1*RJMxLdTHqVBSijKmOO5MAg.jpeg"
+    }
+  ]
+}

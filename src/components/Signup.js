@@ -11,7 +11,6 @@ function Signup() {
   const [error, setError] = useState("");
   const [loading, setLoading] = useState(false);
   const history = useHistory();
-
   async function handleSubmit(e) {
     e.preventDefault();
 
@@ -27,10 +26,8 @@ function Signup() {
       console.log(error);
       setError("Failed to create an account");
     }
-
     setLoading(false);
   }
-
   return (
     <div className="container">
       <div className="flexbox">

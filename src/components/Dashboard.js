@@ -3,6 +3,7 @@ import { useAuth } from "../context/AuthContext";
 import { Card, Button, Alert } from "react-bootstrap";
 import { Link, useHistory } from "react-router-dom";
 import clock from "../img/clock.svg";
+import CourseCard from "./CourseCard";
 
 export default function Dashboard() {
   const { currentUser, logout } = useAuth();
@@ -21,6 +22,30 @@ export default function Dashboard() {
   }
   return (
     <div className="container">
+      <div className="input-group">
+        <input
+          type="search"
+          className="form-control rounded"
+          placeholder="Search"
+          aria-label="Search"
+          aria-describedby="search-addon"
+        />
+        <button type="button" className="btn btn-outline-primary">
+          search
+        </button>
+      </div>
+      <div className="courses container">
+        <div className="flexbox">
+          <CourseCard course={0} />
+          <CourseCard course={1} />
+          <CourseCard course={2} />
+        </div>
+        <div className="flexbox">
+          <CourseCard course={3} />
+          <CourseCard course={4} />
+          <CourseCard course={5} />
+        </div>
+      </div>
       <div className="flexbox">
         <div className="textcolumn animate__animated animate__fadeIn">
           <h2 className="text-center mb-4 heading">Dashboard</h2>
@@ -37,9 +62,9 @@ export default function Dashboard() {
             </Button>
           </div>
         </div>
-        <div className="imagecolumn animate__animated animate__fadeIn animate__delay-1s imgclock">
+        {/* <div className="imagecolumn animate__animated animate__fadeIn animate__delay-1s imgclock">
           <img src={clock} />
-        </div>
+        </div> */}
       </div>
     </div>
   );
