@@ -20,7 +20,7 @@ export default function Home() {
             Sign up now for free!
           </p>
           <button className="btngetstarted">
-            <a href="/about">Get started</a>
+            <a href="/signup">Get started</a>
           </button>
         </div>
         <div className="imagecolumn animate__animated animate__fadeIn animate__delay-1s">
