@@ -13,9 +13,9 @@ export default function Home() {
         <div className="textcolumn animate__animated animate__fadeIn">
           <h2 className="heading">Welcome to EduLearn!</h2>
           <p className="para">
-            Your one-stop shop for accessing premium courses, <br />
+            Now accessing premium courses, <br />
             video lectures and assignments from the best sources <br />
-            on the internet. <br />
+            on the internet is possible on one single platform!<br />
             Access study material for 100+ subjects. <br />
             Sign up now for free!
           </p>

@@ -188,12 +188,14 @@ img {
   align-items: center;
   border-radius: 20%;
   height: 90%;
+  color: black;
 }
 
 .card:hover {
   text-decoration: none;
   background-color: #f5f5f5;
-  transition: 1s;
+  transition: 0.5s;
+  color: black;
 }
 
 .card-text-2 {

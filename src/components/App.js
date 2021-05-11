@@ -11,6 +11,7 @@ import PrivateRoute from "./PrivateRoute";
 import UpdateProfile from "./UpdateProfile";
 import Navigation from "./Navbar";
 import CoursePage from "./CoursePage";
+import Help from "./Help";
 
 function App() {
   return (
@@ -30,6 +31,7 @@ function App() {
             <PrivateRoute path="/dashboard" component={Dashboard} />
             <PrivateRoute path="/updateprofile" component={UpdateProfile} />
             <Route path='/coursepage' component={CoursePage}/>
+            <Route path='/help' component={Help} />
           </Switch>
         </AuthProvider>
       </Router>

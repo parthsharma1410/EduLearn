@@ -7,7 +7,7 @@ export default function CourseCard(props) {
   var linkToCoursePage = '/coursepage/' + courseNo;
 
   return (
-    <a href={linkToCoursePage} className="card">
+    <a href={linkToCoursePage} className="card animate__animated animate__fadeIn">
       <img
         className="card-img"
         src={course.image}

@@ -9,7 +9,7 @@ export default function CoursePage() {
   var course = courses.courseDetails[courseNo];
 
   return (
-    <div className="coursePage">
+    <div className="coursePage animate__animated animate__fadeIn">
              <strong className="heading">{course.name}</strong>
             <p className='uni'>{course.university}</p>
             <div className='flexbox'>
