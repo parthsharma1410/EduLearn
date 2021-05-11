@@ -10,16 +10,30 @@ export default function CoursePage() {
 
   return (
     <div className="coursePage">
-             <strong className="card-text">{course.name}</strong>
-            <p className="card-text">{course.university}</p>
-        <div className='video'>
-            <iframe width="560" height="315" src={course.video} 
-            title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
-            allowfullscreen></iframe>
-        </div>
-      <div className="theory">
-          <p className='card-text-2'>{course.theory}</p>
-      </div> 
+             <strong className="heading">{course.name}</strong>
+            <p className='uni'>{course.university}</p>
+            <div className='flexbox'>
+                <div className='right'>
+                    <div className='video'>
+                        <iframe width="760" height="415" src={course.video} 
+                        title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
+                        allowfullscreen></iframe>
+                        <br /><br />
+                    </div>
+                    <div className="theory">
+                        <strong>Theory Notes:</strong> <br /><br />
+                        <p className='card-text-3'>{course.theory}</p>
+                        <embed type="text/html" src={course.embed} width="760" height="600"></embed>
+                    </div> 
+                </div>
+                <div className='left'>
+                  <strong style={{color:"rgb(108, 42, 139)"}}>COURSE OVERVIEW</strong> <br /> <br />
+                   <strong>Course Name:</strong> <p className='card-text-2'>{course.name}</p>
+                   <strong>Course Length:</strong> <p className='card-text-2'>{course.length}</p>
+                   <strong>Topic:</strong> <p className='card-text-2'>{course.topic}</p>
+                   <strong>Difficulty:</strong> <p className='card-text-2'>{course.difficulty}</p>
+                </div>
+            </div>
     </div>
   );
 }

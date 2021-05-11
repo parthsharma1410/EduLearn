@@ -9,7 +9,8 @@
       "difficulty": "Easy",
       "image": "https://miro.medium.com/max/840/1*RJMxLdTHqVBSijKmOO5MAg.jpeg",
       "video": "https://www.youtube.com/embed/_uQrJ0TkZlc",
-      "theory": "Sample text : The lazy brown fox jumped over the green frog lorem ipsum is a way of filling in the page with fucking giberish so that your website content looks full in test mode."
+      "theory": "Python is a high-level scripting language which can be used for a wide variety of text processing, system administration and internet-related tasks. ",
+      "embed" : "https://www.stat.berkeley.edu/~spector/python.pdf"
     },
     {
       "name": "C++ with STL",
@@ -20,51 +21,56 @@
       "difficulty": "Moderate",
       "image": "https://tse2.mm.bing.net/th?id=OIP.jj3cypYp73e_kRb0m_4QsgHaEK&pid=Api&P=0&w=1489&h=1173",
       "video": "https://www.youtube.com/embed/vLnPwxZdW4Y",
-      "theory": "Sample text : The lazy brown fox jumped over the green frog lorem ipsum is a way of filling in the page with fucking giberish so that your website content looks full in test mode."
+      "theory": "C++ is the object oriented extension of C. As for C there is an ANSI/ISO standard ( final draft 1998) for the C++ programming language. This will ensure that the C++ code is portable between computers.",
+      "embed": "https://thatchna.weebly.com/uploads/4/1/9/3/4193382/std_c_notes_03.pdf"
     },
     {
       "name": "UI/UX",
       "id": "2",
-      "length": "195",
+      "length": "195 min",
       "university": "New York University",
-      "topic": "Desogn",
+      "topic": "Design",
       "difficulty": "Easy",
       "image": "https://tse1.mm.bing.net/th?id=OIP.9t7htXFPzrmIc-dsCkNzhwHaD5&pid=Api&P=0&w=1300&h=859",
-      "video": "https://www.youtube.com/embed/_uQrJ0TkZlc",
-      "theory": "Sample text : The lazy brown fox jumped over the green frog lorem ipsum is a way of filling in the page with fucking giberish so that your website content looks full in test mode."
+      "video": "https://www.youtube.com/embed/c9Wg6Cb_YlU",
+      "theory": "WHAT IS USER EXPERIENCE? (UX) Puts the end user at the center of the universe and defines the system from that perspective Usability is finding the best match between a user’s needs and a product’s use.",
+      "embed": "https://course.ccs.neu.edu/cs5500sp17/09-UX.pdf"
     },
     {
       "name": "React for Beginners",
       "id": "3",
-      "length": "285",
+      "length": "285 min",
       "university": "Bath University",
       "topic": "Python",
       "difficulty": "Moderate",
       "image": "https://tse1.mm.bing.net/th?id=OIP.Z9eWpRj2-B2al3bsX69ujQHaE4&pid=Api&P=0&w=1300&h=859",
-      "video": "https://www.youtube.com/embed/_uQrJ0TkZlc",
-      "theory": "Sample text : The lazy brown fox jumped over the green frog lorem ipsum is a way of filling in the page with fucking giberish so that your website content looks full in test mode."
+      "video": "https://www.youtube.com/embed/Ke90Tje7VS0",
+      "theory": "ReactJs is a Javascript framework used for building we applications. It divides the entire web pahe into re-useable components, which makes the websites faster and the code more readable. ReactJs is the most used framework in website development.",
+      "embed": "https://web.stanford.edu/class/cs142/lectures/ReactJS.pdf"
     },
     {
-      "name": "Database Management Systems",
+      "name": "Database Management Systems(SQL)",
       "id": "4",
-      "length": "689",
+      "length": "689 min",
       "university": "University of British Columbia",
       "topic": "Database",
       "difficulty": "Difficult",
       "image": "https://tse1.mm.bing.net/th?id=OIP.ltvzNrEKyCmK29oRKMHAIwHaEK&pid=Api&P=0&w=1297&h=868",
-      "video": "https://www.youtube.com/embed/_uQrJ0TkZlc",
-      "theory": "Sample text : The lazy brown fox jumped over the green frog lorem ipsum is a way of filling in the page with fucking giberish so that your website content looks full in test mode."
+      "video": "https://www.youtube.com/embed/7S_tz1z_5bA",
+      "theory": "SQL is structured query language, used to perform Create, Remove, Updateand delete operations in Database Management Systems. Some SQL languages include MySQL, Oracle, and PostgreSQL. ",
+      "embed": "https://www.stat.berkeley.edu/~spector/sql.pdf"
     },
     {
       "name": "Android Development",
       "id": "5",
-      "length": "588",
+      "length": "588 min",
       "university": "University of  San Diego",
       "topic": "Android",
       "difficulty": "Difficult",
       "image": "https://developer.android.com/images/social/android-developers.png",
-      "video": "https://www.youtube.com/embed/_uQrJ0TkZlc",
-      "theory": "Sample text : The lazy brown fox jumped over the green frog lorem ipsum is a way of filling in the page with fucking giberish so that your website content looks full in test mode."
+      "video": "https://www.youtube.com/embed/fis26HvvDII",
+      "theory": "Android is an open source OS platform for mobile, embedded and wearable devices, which is and developed and maintained by Google. Other companies contribute to the system. Each device manufacturer can customize Android to suite their needs. The Latest Android version is Android 11.",
+      "embed": "https://web.stanford.edu/class/cs231m/lectures/lecture-2-android-dev.pdf"
     }
   ]
 }

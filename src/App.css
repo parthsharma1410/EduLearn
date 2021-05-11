@@ -96,12 +96,16 @@
 .heading {
   font-family: "Poppins", sans-serif;
   padding-top: 20%;
-  padding-bottom: 10%;
+  padding-bottom: 5%;
   font-weight: bold;
 }
 
 p {
   padding-bottom: 10%;
+}
+
+.uni {
+  padding: 0px;
 }
 
 .btnsubmit {
@@ -186,8 +190,19 @@ img {
   height: 90%;
 }
 
+.card:hover {
+  text-decoration: none;
+  background-color: #f5f5f5;
+  transition: 1s;
+}
+
 .card-text-2 {
   margin-right: 50%;
+}
+
+.card-text-3 {
+  margin-right: 10%;
+  padding: 0px;
 }
 
 .btnsearch {
