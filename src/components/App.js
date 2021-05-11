@@ -10,6 +10,7 @@ import ForgotPassword from "./ForgotPassword";
 import PrivateRoute from "./PrivateRoute";
 import UpdateProfile from "./UpdateProfile";
 import Navigation from "./Navbar";
+import CoursePage from "./CoursePage";
 
 function App() {
   return (
@@ -28,6 +29,7 @@ function App() {
             <Route path="/forgotpassword" component={ForgotPassword} />
             <PrivateRoute path="/dashboard" component={Dashboard} />
             <PrivateRoute path="/updateprofile" component={UpdateProfile} />
+            <Route path='/coursepage' component={CoursePage}/>
           </Switch>
         </AuthProvider>
       </Router>

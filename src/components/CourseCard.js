@@ -4,9 +4,10 @@ import '../App.css'
 export default function CourseCard(props) {
   var courseNo = props.course;
   var course = courses.courseDetails[courseNo];
+  var linkToCoursePage = '/coursepage/' + courseNo;
 
   return (
-    <div className="card">
+    <a href={linkToCoursePage} className="card">
       <img
         className="card-img"
         src={course.image}
@@ -20,6 +21,6 @@ export default function CourseCard(props) {
           <p className='card-text'>{course.difficulty}</p>
         </div>
       </div>
-    </div>
+    </a>
   );
 }

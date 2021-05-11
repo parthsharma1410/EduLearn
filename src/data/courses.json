@@ -7,7 +7,9 @@
       "university": "University of British Columbia",
       "topic": "Python",
       "difficulty": "Easy",
-      "image": "https://miro.medium.com/max/840/1*RJMxLdTHqVBSijKmOO5MAg.jpeg"
+      "image": "https://miro.medium.com/max/840/1*RJMxLdTHqVBSijKmOO5MAg.jpeg",
+      "video": "https://www.youtube.com/embed/_uQrJ0TkZlc",
+      "theory": "Sample text : The lazy brown fox jumped over the green frog lorem ipsum is a way of filling in the page with fucking giberish so that your website content looks full in test mode."
     },
     {
       "name": "C++ with STL",
@@ -16,7 +18,9 @@
       "university": "Harvard University",
       "topic": "C++",
       "difficulty": "Moderate",
-      "image": "https://tse2.mm.bing.net/th?id=OIP.jj3cypYp73e_kRb0m_4QsgHaEK&pid=Api&P=0&w=1489&h=1173"
+      "image": "https://tse2.mm.bing.net/th?id=OIP.jj3cypYp73e_kRb0m_4QsgHaEK&pid=Api&P=0&w=1489&h=1173",
+      "video": "https://www.youtube.com/embed/vLnPwxZdW4Y",
+      "theory": "Sample text : The lazy brown fox jumped over the green frog lorem ipsum is a way of filling in the page with fucking giberish so that your website content looks full in test mode."
     },
     {
       "name": "UI/UX",
@@ -25,7 +29,9 @@
       "university": "New York University",
       "topic": "Desogn",
       "difficulty": "Easy",
-      "image": "https://tse1.mm.bing.net/th?id=OIP.9t7htXFPzrmIc-dsCkNzhwHaD5&pid=Api&P=0&w=1300&h=859"
+      "image": "https://tse1.mm.bing.net/th?id=OIP.9t7htXFPzrmIc-dsCkNzhwHaD5&pid=Api&P=0&w=1300&h=859",
+      "video": "https://www.youtube.com/embed/_uQrJ0TkZlc",
+      "theory": "Sample text : The lazy brown fox jumped over the green frog lorem ipsum is a way of filling in the page with fucking giberish so that your website content looks full in test mode."
     },
     {
       "name": "React for Beginners",
@@ -34,7 +40,9 @@
       "university": "Bath University",
       "topic": "Python",
       "difficulty": "Moderate",
-      "image": "https://tse1.mm.bing.net/th?id=OIP.Z9eWpRj2-B2al3bsX69ujQHaE4&pid=Api&P=0&w=1300&h=859"
+      "image": "https://tse1.mm.bing.net/th?id=OIP.Z9eWpRj2-B2al3bsX69ujQHaE4&pid=Api&P=0&w=1300&h=859",
+      "video": "https://www.youtube.com/embed/_uQrJ0TkZlc",
+      "theory": "Sample text : The lazy brown fox jumped over the green frog lorem ipsum is a way of filling in the page with fucking giberish so that your website content looks full in test mode."
     },
     {
       "name": "Database Management Systems",
@@ -43,7 +51,9 @@
       "university": "University of British Columbia",
       "topic": "Database",
       "difficulty": "Difficult",
-      "image": "https://tse1.mm.bing.net/th?id=OIP.ltvzNrEKyCmK29oRKMHAIwHaEK&pid=Api&P=0&w=1297&h=868"
+      "image": "https://tse1.mm.bing.net/th?id=OIP.ltvzNrEKyCmK29oRKMHAIwHaEK&pid=Api&P=0&w=1297&h=868",
+      "video": "https://www.youtube.com/embed/_uQrJ0TkZlc",
+      "theory": "Sample text : The lazy brown fox jumped over the green frog lorem ipsum is a way of filling in the page with fucking giberish so that your website content looks full in test mode."
     },
     {
       "name": "Android Development",
@@ -52,7 +62,9 @@
       "university": "University of  San Diego",
       "topic": "Android",
       "difficulty": "Difficult",
-      "image": "https://developer.android.com/images/social/android-developers.png"
+      "image": "https://developer.android.com/images/social/android-developers.png",
+      "video": "https://www.youtube.com/embed/_uQrJ0TkZlc",
+      "theory": "Sample text : The lazy brown fox jumped over the green frog lorem ipsum is a way of filling in the page with fucking giberish so that your website content looks full in test mode."
     }
   ]
 }
