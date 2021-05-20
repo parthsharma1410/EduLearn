@@ -2,7 +2,7 @@
 This is an educational website which will provide a student with all \
 important resources like theory notes and interactive video lectures \
 on one single platform.\
-As of now, the login and signup module are completed, and work on dashboard is going on right now.
+As of now, the login and signup module, dashboard module are completed, and work on help guide is going on right now.
 ## Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
