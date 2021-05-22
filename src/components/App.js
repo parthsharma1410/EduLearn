@@ -12,6 +12,7 @@ import UpdateProfile from "./UpdateProfile";
 import Navigation from "./Navbar";
 import CoursePage from "./CoursePage";
 import Help from "./Help";
+import About from "./About";
 
 function App() {
   return (
@@ -32,6 +33,7 @@ function App() {
             <PrivateRoute path="/updateprofile" component={UpdateProfile} />
             <Route path='/coursepage' component={CoursePage}/>
             <Route path='/help' component={Help} />
+            <Route path='/about' component={About} />
           </Switch>
         </AuthProvider>
       </Router>

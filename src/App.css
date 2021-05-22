@@ -220,6 +220,17 @@ img {
   padding-right: 3%;
 }
 
+.aboutimg {
+  width: 110%;
+  height: 40%;
+}
+
+.aboutimg2 {
+  padding-right: 20%;
+  width: 110%;
+  height: 40%;
+}
+
 @media screen and (max-width: 800px) {
   .flexbox {
     display: block;
