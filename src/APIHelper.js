@@ -1,9 +1,11 @@
-
+import { useAuth } from "./context/AuthContext";
 import axios from "axios"
 
 const API_URL = "http://localhost:4000/help/"
 
 async function createComment(comment) {
+    // const email = props.email
+    // const comment = props.comment
   const { data: newComment } = await axios.post(API_URL, {
     comment,
   })

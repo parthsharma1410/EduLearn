@@ -58,7 +58,7 @@ export default function Help() {
         <ul>
         {comments.map(({ _id, email, comment }, i) => (
           <li>
-            Like
+            {comments[i].comment}
           </li>
         ))}
       </ul>
