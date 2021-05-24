@@ -94,10 +94,15 @@
 }
 
 .heading {
+  color: black;
   font-family: "Poppins", sans-serif;
   padding-top: 20%;
   padding-bottom: 5%;
   font-weight: bold;
+}
+
+.text {
+  color: black;
 }
 
 p {
@@ -180,6 +185,17 @@ img {
 
 .card-img {
   padding-left: 0%;
+}
+
+.unflex {
+  display: flex;
+  flex-direction: column;
+}
+
+.sticky {
+  position: -webkit-sticky;
+  position: sticky;
+  bottom: 0;
 }
 
 .card {
@@ -290,9 +306,9 @@ img {
   width: 50%;
 }
 
-body {
+/* body {
   background-color: black;
-}
+} */
 
 #nav-items li a,
 #profile {
@@ -333,18 +349,12 @@ body {
   display: inline;
 }
 
-.comment p,
+/* .comment p,
 .comment span,
 .darker p,
 .darker span {
   color: rgb(184, 183, 183);
-}
-
-h1,
-h4 {
-  color: white;
-  font-weight: bold;
-}
+} */
 
 /* label {
   color: rgb(212, 208, 208);
@@ -380,3 +390,7 @@ form {
   border-radius: 5px;
   padding: 20px;
 } */
+
+.comment {
+  background-color: rgb(249, 233, 255);
+}

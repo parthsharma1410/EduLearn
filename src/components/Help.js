@@ -1,87 +1,146 @@
-import React from "react";
+import React, { useContext, useEffect, useState } from "react";
 import "../../src/App.css";
 import { Form, Button, Card, Alert, Navbar, Nav } from "react-bootstrap";
 import { useAuth } from "../context/AuthContext";
 import { Link, useHistory } from "react-router-dom";
 import Navigation from "./Navbar";
-import mainpage from "../img/mainpage.svg";
+import APIHelper from "../APIHelper"
 
 export default function Help() {
   const { currentUser } = useAuth();
+  const email = currentUser.email
+  const [comments, setComments] = useState([])
+  const [comment, setComment] = useState("")
 
-  function postComment() {
-    setTimeout(() => {
-      var comment = document.getElementById("comment-text").value;
-      document.getElementById("comment-text").value = "";
-      var div = document.createElement("div");
-      div.className =
-        "comment mb-4 text-justify animate__animated animate__fadeIn";
-      var name = document.createElement("H4");
-      name.innerHTML = currentUser.email;
-      name.className = "mb-4 pb-0";
-      var para = document.createElement("P");
-      para.innerHTML = comment;
-      div.appendChild(name);
-      div.appendChild(para);
-      document.getElementById("comments-box").appendChild(div);
-      console.log("Comment posted successfully");
-    }, 3000);
+  useEffect(() => {
+    const fetchCommentAndSetComments = async () => {
+      const comments = await APIHelper.getAllComments()
+      console.log(comments)
+      setComments(comments)
+    }
+    fetchCommentAndSetComments()
+  }, [])
+
+  const createComment = async e => {
+    e.preventDefault()
+    if (!comment) {
+      alert("please enter something")
+      return
+    }
+    const newComment = await APIHelper.createComment(comment)
+    setComments([...comments, newComment])
   }
+
+  // function postComment() {
+  //   setTimeout(() => {
+  //     var comment = document.getElementById("comment-text").value;
+  //     document.getElementById("comment-text").value = "";
+  //     var div = document.createElement("div");
+  //     div.className =
+  //       "comment mb-4 text-justify animate__animated animate__fadeIn";
+  //     var name = document.createElement("H4");
+  //     name.innerHTML = currentUser.email;
+  //     name.className = "mb-4 pb-0 text";
+  //     var para = document.createElement("P");
+  //     para.innerHTML = comment;
+  //     div.appendChild(name);
+  //     div.appendChild(para);
+  //     document.getElementById("comments-box").appendChild(div);
+  //     console.log("Comment posted successfully");
+  //   }, 3000);
+  // }
+
   return (
     <div className="container animate__animated animate__fadeIn">
-      <div className="row">
+      <div className="unflex">
         <div className="col-sm-5 col-md-6 col-12 pb-4" id="comments-box">
-          <h1> Comments</h1>
-          <div className="comment mb-4 text-justify">
-            <h4>Aakar Gupta</h4> <br />
-            <p className="pt-4 pb-0">
+
+        <ul>
+        {comments.map(({ _id, email, comment }, i) => (
+          <li>
+            Like
+          </li>
+        ))}
+      </ul>
+
+          {/* <div className="comment mb-4 text-justify">
+            <h4 className="heading">Aakar Gupta</h4> <br />
+            <p className="pt-4 pb-0 text">
               This site is perfect and doesn't have any issues. Thank you for
               creating this amazing website.
             </p>
           </div>
           <div className="comment mb-4 text-justify">
-            <h4>Ishi Yadav</h4> <br />
-            <p className="pt-4 pb-0">
-              I can't access the notes. Please hellpppppp. I am very strestt.
+            <h4 className="heading">Ishi Yadav</h4> <br />
+            <p className="pt-4 pb-0 text">
+              I can't access the notes. Please hellpppppp. I am very strestt. Please hit me up with a solution.
             </p>
           </div>
           <div className="comment mb-4 text-justify float-left">
-            <h4>Keet</h4>
+            <h4 className="heading">Keet</h4>
             <br />
-            <p className="pt-4 pb-0">
+            <p className="pt-4 pb-0 text">
               I have a problem with accessing the video of the course in course
               page.
             </p>
           </div>
+          <div className="comment mb-4 text-justify float-left">
+            <h4 className="heading">Keet</h4>
+            <br />
+            <p className="pt-4 pb-0 text">
+              I have a problem with accessing the video of the course in course
+              page.
+            </p>
+          </div>
+          <div className="comment mb-4 text-justify float-left">
+            <h4 className="heading">Keet</h4>
+            <br />
+            <p className="pt-4 pb-0 text">
+              I have a problem with accessing the video of the course in course
+              page.
+            </p>
+          </div>
+          <div className="comment mb-4 text-justify float-left">
+            <h4 className="heading">Keet</h4>
+            <br />
+            <p className="pt-4 pb-0 text">
+              I have a problem with accessing the video of the course in course
+              page.
+            </p>
+          </div> */}
         </div>
-        <div className="col-lg-4 col-md-5 col-sm-4 offset-md-1 offset-sm-1 col-12 mt-4">
-          <form id="algin-form">
+        <div className='flexbox sticky'>
+        <div>
+        <input
+          id="comment-input"
+          type="text"
+          value={comment}
+          onChange={({ target }) => setComment(target.value)}
+        />
+        <button type="button" onClick={createComment}>
+          Add
+        </button>
+      </div>
+        {/* <form id="algin-form">
             <div className="form-group">
-              <h4>Leave a comment</h4> <label for="message">Message</label>{" "}
+            </div>
+            <div className="form-group flexbox">
               <textarea
                 name="msg"
                 id="comment-text"
                 msg
-                cols="30"
-                rows="5"
+                placeholder='What do you want to ask?'
+                cols="90"
+                rows="2"
                 className="form-control"
               ></textarea>
-            </div>
-
-            <div className="form-group">
-              {" "}
-              <button
-                type="button"
-                id="post"
-                className="btn"
-                onClick={postComment}
-              >
+              <button type="button" className="btnsubmit ml-5" onClick={postComment}>
                 Post Comment
-              </button>{" "}
+              </button>
             </div>
-          </form>
+          </form> */}
+        </div>
         </div>
       </div>
-    </div>
   );
 }
