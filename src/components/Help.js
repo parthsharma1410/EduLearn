@@ -27,7 +27,7 @@ export default function Help() {
       alert("please enter something")
       return
     }
-    const newComment = await APIHelper.createComment(comment)
+    const newComment = await APIHelper.createComment(email, comment)
     setComments([...comments, newComment])
   }
 
@@ -55,13 +55,15 @@ export default function Help() {
       <div className="unflex">
         <div className="col-sm-5 col-md-6 col-12 pb-4" id="comments-box">
 
-        <ul>
+
         {comments.map(({ _id, email, comment }, i) => (
-          <li>
+        <div className="comment mb-4 text-justify">
+            <h4 className="heading">{comments[i].email}</h4> <br />
+            <p className="pt-4 pb-0 text">
             {comments[i].comment}
-          </li>
+            </p>
+          </div>
         ))}
-      </ul>
 
           {/* <div className="comment mb-4 text-justify">
             <h4 className="heading">Aakar Gupta</h4> <br />
@@ -109,38 +111,44 @@ export default function Help() {
             </p>
           </div> */}
         </div>
-        <div className='flexbox sticky'>
-        <div>
+        {/* <div className='algin-form flexbox sticky'>
+        <div className="form-group">
         <input
-          id="comment-input"
+          id="comment-text"
           type="text"
+          cols="90"
+          rows="2"
+          placeholder='What do you want to ask?'
+          className="form-control"
           value={comment}
           onChange={({ target }) => setComment(target.value)}
         />
-        <button type="button" onClick={createComment}>
+      </div>
+      <div>
+        <button type="button" className="btnsubmit ml-5" onClick={createComment}>
           Add
         </button>
-      </div>
-        {/* <form id="algin-form">
+      </div> */}
+        <form id="algin-form">
             <div className="form-group">
             </div>
             <div className="form-group flexbox">
               <textarea
-                name="msg"
-                id="comment-text"
-                msg
-                placeholder='What do you want to ask?'
-                cols="90"
-                rows="2"
-                className="form-control"
+               id="comment-text"
+              type="text"
+              cols="90"
+              rows="2"
+              placeholder='What do you want to ask?'
+              className="form-control"
+              value={comment}
+              onChange={({ target }) => setComment(target.value)}
               ></textarea>
-              <button type="button" className="btnsubmit ml-5" onClick={postComment}>
+              <button type="button" className="btnsubmit ml-5" onClick={createComment}>
                 Post Comment
               </button>
             </div>
-          </form> */}
+          </form>
         </div>
         </div>
-      </div>
   );
 }

@@ -23,6 +23,7 @@ app.get("/help", async (req, res, next) => {
 })
 
 app.post("/help", async (req, res, next) => {
+    // console.log(req.body)
   try {
     const comment = await db.Comments.create(req.body)
     return success(res, comment)

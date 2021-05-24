@@ -3,10 +3,16 @@ import axios from "axios"
 
 const API_URL = "http://localhost:4000/help/"
 
-async function createComment(comment) {
+async function createComment(email, comment) {
+    // const newdata = {
+    //     'email': email,
+    //     'comment': comment
+    // }
+    // console.log(newdata)
     // const email = props.email
     // const comment = props.comment
   const { data: newComment } = await axios.post(API_URL, {
+    email,
     comment,
   })
   return newComment
