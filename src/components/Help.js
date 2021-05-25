@@ -31,37 +31,54 @@ export default function Help() {
     setComments([...comments, newComment])
   }
 
-  // function postComment() {
+  // function postReply() {
   //   setTimeout(() => {
   //     var comment = document.getElementById("comment-text").value;
   //     document.getElementById("comment-text").value = "";
   //     var div = document.createElement("div");
   //     div.className =
   //       "comment mb-4 text-justify animate__animated animate__fadeIn";
-  //     var name = document.createElement("H4");
+  //     var name = document.createElement("H6");
   //     name.innerHTML = currentUser.email;
   //     name.className = "mb-4 pb-0 text";
   //     var para = document.createElement("P");
   //     para.innerHTML = comment;
   //     div.appendChild(name);
   //     div.appendChild(para);
-  //     document.getElementById("comments-box").appendChild(div);
-  //     console.log("Comment posted successfully");
-  //   }, 3000);
+  //     document.getElementById("reply-here").innerHTML = 'hi';
+  //     console.log("Reply posted successfully");
+  //   }, 2000);
   // }
 
   return (
     <div className="container animate__animated animate__fadeIn">
       <div className="unflex">
-        <div className="col-sm-5 col-md-6 col-12 pb-4" id="comments-box">
+        <div className="w-100" id="comments-box">
 
 
         {comments.map(({ _id, email, comment }, i) => (
-        <div className="comment mb-4 text-justify">
+        <div className="comment mb-4 text-justify" >
             <h4 className="heading">{comments[i].email}</h4> <br />
             <p className="pt-4 pb-0 text">
             {comments[i].comment}
             </p>
+            <div id="reply-here">
+
+            </div>
+            <div className="form-group flexbox">
+        <input
+          id="comment-text"
+          type="text"
+          cols="90"
+          rows="2"
+          placeholder='Reply to this user'
+          className="form-control"
+          // onClick={postReply}
+        />
+        <button type="button" className="btnsubmit ml-5" onClick={createComment}>
+          Add
+        </button>
+      </div>
           </div>
         ))}
 
@@ -132,13 +149,13 @@ export default function Help() {
         <form id="algin-form">
             <div className="form-group">
             </div>
-            <div className="form-group flexbox">
+            <div className="form-group flexbox grey">
               <textarea
                id="comment-text"
               type="text"
               cols="90"
               rows="2"
-              placeholder='What do you want to ask?'
+              placeholder='Ask something...'
               className="form-control"
               value={comment}
               onChange={({ target }) => setComment(target.value)}
