@@ -1,8 +1,9 @@
 # EduLearn
+
 This is an educational website which will provide a student with all \
 important resources like theory notes and interactive video lectures \
-on one single platform.\
-As of now, the login and signup module, dashboard module are completed, and work on help guide is going on right now.
+on one single platform, and also includes a help module where anyone who is logged in can ask questions related to any topic and anyone can reply to their queries.\
+
 ## Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
