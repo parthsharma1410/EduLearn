@@ -3,6 +3,7 @@ import { Form, Button, Card, Alert } from "react-bootstrap";
 import { useAuth } from "../context/AuthContext";
 import { Link, useHistory } from "react-router-dom";
 import signuppage from "../img/signuppage.svg";
+import Navigation3 from "./Navbar3";
 function Signup() {
   const emailRef = useRef();
   const passwordRef = useRef();
@@ -30,6 +31,7 @@ function Signup() {
   }
   return (
     <div className="container">
+      <Navigation3 />
       <div className="flexbox">
         <div className="textcolumn animate__animated animate__fadeIn">
           <h2 className="text-centre mb-4 heading">Sign Up</h2>

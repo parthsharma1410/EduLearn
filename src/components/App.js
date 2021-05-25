@@ -13,6 +13,7 @@ import Navigation from "./Navbar";
 import CoursePage from "./CoursePage";
 import Help from "./Help";
 import About from "./About";
+import Navigation2 from "./Navbar2";
 
 function App() {
   return (
@@ -20,7 +21,7 @@ function App() {
       className="align-items-center justify-content-center"
       style={{ minHeight: "100vh" }}
     >
-      <Navigation />
+      {/* <Navigation /> */}
       {/* <div className="w-100" style={{ maxWidth: "400px"}}> */}
       <Router>
         <AuthProvider>

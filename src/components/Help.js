@@ -3,7 +3,7 @@ import "../../src/App.css";
 import { Form, Button, Card, Alert, Navbar, Nav } from "react-bootstrap";
 import { useAuth } from "../context/AuthContext";
 import { Link, useHistory } from "react-router-dom";
-import Navigation from "./Navbar";
+import Navigation2 from "./Navbar2";
 import APIHelper from "../APIHelper"
 
 export default function Help() {
@@ -52,6 +52,7 @@ export default function Help() {
 
   return (
     <div className="container animate__animated animate__fadeIn">
+      <Navigation2 />
       <div className="unflex">
         <div className="w-100" id="comments-box">
 

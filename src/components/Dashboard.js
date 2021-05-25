@@ -4,6 +4,7 @@ import { Card, Button, Alert } from "react-bootstrap";
 import { Link, useHistory } from "react-router-dom";
 import clock from "../img/clock.svg";
 import CourseCard from "./CourseCard";
+import Navigation2 from "./Navbar2";
 
 export default function Dashboard() {
   const { currentUser, logout } = useAuth();
@@ -22,6 +23,7 @@ export default function Dashboard() {
   }
   return (
     <div className="container animate__animated animate__fadeIn">
+      <Navigation2 />
        <div className="flexbox">
         <div className="textcolumn animate__animated animate__fadeIn">
           {error && <Alert variant="danger">{error}</Alert>}
@@ -31,9 +33,6 @@ export default function Dashboard() {
         <button className="btnsubmit2">
             <a href="/updateprofile">Update Profile</a>
           </button>
-            <button className="btnsearch" onClick={handleLogout}>
-              Log Out
-            </button>
           <br /><br />
           </div>
         {/* <div className="imagecolumn animate__animated animate__fadeIn animate__delay-1s imgclock">

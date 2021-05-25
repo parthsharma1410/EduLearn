@@ -127,14 +127,12 @@ p {
 .btnsubmit2 {
   border-radius: 5px;
   border-style: none;
-  width: 12rem;
+  width: 9rem;
   height: 2.3rem;
   margin-right: 2%;
-  margin-left: 35%;
+  margin-left: 73%;
   color: white;
   background-color: rgb(108, 42, 139);
-  padding-left: 3%;
-  padding-right: 3%;
 }
 
 .btnsubmit a {
@@ -239,6 +237,17 @@ img {
   background-color: white;
   padding-left: 3%;
   padding-right: 3%;
+}
+
+.btnlogout {
+  border-radius: 5px;
+  border-style: none;
+  border-color: rgb(108, 42, 139);
+  width: 11rem;
+  border-style: solid;
+  height: 3rem;
+  color: rgb(108, 42, 139);
+  background-color: white;
 }
 
 .aboutimg {

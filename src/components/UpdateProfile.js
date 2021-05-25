@@ -3,6 +3,8 @@ import { Form, Button, Card, Alert } from "react-bootstrap";
 import { useAuth } from "../context/AuthContext";
 import { Link, useHistory } from "react-router-dom";
 import "../App.css";
+import Navigation2 from "./Navbar2";
+import loginpage from "../img/loginpage.svg";
 
 function UpdateProfile() {
   const emailRef = useRef();
@@ -44,6 +46,10 @@ function UpdateProfile() {
 
   return (
     <div className="container animate__animated animate__fadeIn">
+      <Navigation2 />
+      <div className='flexbox'>
+        <div>
+
       <h2 className="text-centre mb-4 heading">Update Profile</h2>
       {error && <Alert variant="danger">{error}</Alert>}
       <Form onSubmit={handleSubmit}>
@@ -70,6 +76,11 @@ function UpdateProfile() {
       </Form>
       <div className="w-100 text-center mt-2">
         To cancel making changes <Link to="/dashboard">Cick here</Link>
+      </div>
+        </div>
+      <div className="imagecolumn animate__animated animate__fadeIn animate__delay-1s">
+          <img src={loginpage} />
+        </div>
       </div>
     </div>
   );

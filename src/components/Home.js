@@ -9,6 +9,7 @@ import mainpage from "../img/mainpage.svg";
 export default function Home() {
   return (
     <div className="container">
+      <Navigation />
       <div className="flexbox">
         <div className="textcolumn animate__animated animate__fadeIn">
           <h2 className="heading">Welcome to EduLearn!</h2>

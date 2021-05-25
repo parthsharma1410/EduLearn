@@ -3,6 +3,7 @@ import { Form, Button, Card, Alert } from "react-bootstrap";
 import { useAuth } from "../context/AuthContext";
 import { Link, useHistory } from "react-router-dom";
 import forgotpassword from "../img/forgotpassword.svg";
+import Navigation from "./Navbar";
 
 function ForgotPassword() {
   const emailRef = useRef();
@@ -32,6 +33,7 @@ function ForgotPassword() {
 
   return (
     <div className="container">
+      <Navigation />
       <div className="flexbox">
         <div className="textcolumn animate__animated animate__fadeIn">
           <h2 className="text-centre mb-4 heading">Password Reset</h2>
