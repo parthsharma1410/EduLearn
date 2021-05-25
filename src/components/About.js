@@ -11,6 +11,7 @@ import signuppage from "../img/signuppage.svg";
 export default function About() {
   return (
     <div className="container">
+      <Navigation />
       <div className="flexbox">
         <div className="textcolumn animate__animated animate__fadeIn">
           <h2 className="heading">This is EduLearn!</h2>

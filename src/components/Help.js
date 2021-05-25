@@ -3,7 +3,7 @@ import "../../src/App.css";
 import { Form, Button, Card, Alert, Navbar, Nav } from "react-bootstrap";
 import { useAuth } from "../context/AuthContext";
 import { Link, useHistory } from "react-router-dom";
-import Navigation2 from "./Navbar2";
+import Navigation4 from "./Navbar4";
 import APIHelper from "../APIHelper"
 
 export default function Help() {
@@ -52,13 +52,34 @@ export default function Help() {
 
   return (
     <div className="container animate__animated animate__fadeIn">
-      <Navigation2 />
+      <Navigation4 />
       <div className="unflex">
+
+      <div className="form-group">
+        <form id="algin-form">
+            <div className="form-group flexbox sticky grey">
+              <textarea
+               id="comment-text"
+               type="text"
+               cols="90"
+               rows="2"
+               placeholder='Ask something...'
+               className="form-control"
+               value={comment}
+               onChange={({ target }) => setComment(target.value)}
+               ></textarea>
+              <button type="button" className="btnsubmit ml-5" onClick={createComment}>
+                Post Comment
+              </button>
+            </div>
+          </form>
+               </div>
+
         <div className="w-100" id="comments-box">
 
 
         {comments.map(({ _id, email, comment }, i) => (
-        <div className="comment mb-4 text-justify" >
+        <div className="comment mb-4 text-justify animate__animated animate__fadeInLeft animate__delay-1s" >
             <h4 className="heading">{comments[i].email}</h4> <br />
             <p className="pt-4 pb-0 text">
             {comments[i].comment}
@@ -147,25 +168,6 @@ export default function Help() {
           Add
         </button>
       </div> */}
-        <form id="algin-form">
-            <div className="form-group">
-            </div>
-            <div className="form-group flexbox grey">
-              <textarea
-               id="comment-text"
-              type="text"
-              cols="90"
-              rows="2"
-              placeholder='Ask something...'
-              className="form-control"
-              value={comment}
-              onChange={({ target }) => setComment(target.value)}
-              ></textarea>
-              <button type="button" className="btnsubmit ml-5" onClick={createComment}>
-                Post Comment
-              </button>
-            </div>
-          </form>
         </div>
         </div>
   );

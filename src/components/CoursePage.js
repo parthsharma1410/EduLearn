@@ -1,6 +1,7 @@
 import React from "react";
 import courses from "../data/courses.json";
 import '../App.css'
+import Navigation2 from "./Navbar2";
 export default function CoursePage() {
   //var courseNo = props.course;
   const pathname = window.location.pathname
@@ -10,6 +11,7 @@ export default function CoursePage() {
 
   return (
     <div className="coursePage animate__animated animate__fadeIn">
+      <Navigation2 />
              <strong className="heading">{course.name}</strong>
             <p className='uni'>{course.university}</p>
             <div className='flexbox'>

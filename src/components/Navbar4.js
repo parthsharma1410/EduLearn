@@ -4,8 +4,23 @@ import { useAuth } from "../context/AuthContext";
 import { Link, useHistory } from "react-router-dom";
 import "../../src/App.css";
 
-function Navigation() {
+function Navigation4() {
   const [msg, setmsg] = useState("");
+
+  const { currentUser, logout } = useAuth();
+  const [error, setError] = useState("");
+  const history = useHistory();
+
+  async function handleLogout() {
+    setError("");
+
+    try {
+      await logout();
+      history.push("/");
+    } catch {
+      setError("Failed to log out");
+    }
+  }
   // const emailRef = useRef()
   // const { resetPassword, currentUser } = useAuth()
   // const [error, setError] = useState('')
@@ -41,14 +56,14 @@ function Navigation() {
         <Nav className="mr-auto">
           <Nav.Link href="/">Home</Nav.Link>
           <Nav.Link href="/about">About</Nav.Link>
-          {/* <Nav.Link href="/help">Help</Nav.Link> */}
+          <Nav.Link href="/dashboard">Dashboard</Nav.Link>
         </Nav>
-        <button href="/signin" className="btnlogin">
-          <a href="/signin">Login</a>
-        </button>
+        <button className="btnlogout" onClick={handleLogout}>
+              Log Out
+            </button>
       </Navbar>
     </>
   );
 }
 
-export default Navigation;
+export default Navigation4;
