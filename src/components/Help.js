@@ -31,6 +31,7 @@ export default function Help() {
     setComments([...comments, newComment])
   }
 
+
   // function postReply() {
   //   setTimeout(() => {
   //     var comment = document.getElementById("comment-text").value;
@@ -79,13 +80,12 @@ export default function Help() {
 
 
         {comments.map(({ _id, email, comment }, i) => (
-        <div className="comment mb-4 text-justify animate__animated animate__fadeInLeft animate__delay-1s" >
+          <div className="comment mb-4 text-justify animate__animated animate__fadeInLeft animate__delay-1s" >
             <h4 className="heading">{comments[i].email}</h4> <br />
             <p className="pt-4 pb-0 text">
             {comments[i].comment}
             </p>
             <div id="reply-here">
-
             </div>
             <div className="form-group flexbox">
         <input
@@ -95,79 +95,19 @@ export default function Help() {
           rows="2"
           placeholder='Reply to this user'
           className="form-control"
+          onChange={({ target }) => comments[i].reply = target.value}
           // onClick={postReply}
         />
-        <button type="button" className="btnsubmit ml-5" onClick={createComment}>
+        <p className="pt-4 pb-0 text">
+            {comments[i].reply}
+            </p>
+        <button type="button" className="btnsubmit ml-5" >
           Add
         </button>
       </div>
           </div>
         ))}
-
-          {/* <div className="comment mb-4 text-justify">
-            <h4 className="heading">Aakar Gupta</h4> <br />
-            <p className="pt-4 pb-0 text">
-              This site is perfect and doesn't have any issues. Thank you for
-              creating this amazing website.
-            </p>
-          </div>
-          <div className="comment mb-4 text-justify">
-            <h4 className="heading">Ishi Yadav</h4> <br />
-            <p className="pt-4 pb-0 text">
-              I can't access the notes. Please hellpppppp. I am very strestt. Please hit me up with a solution.
-            </p>
-          </div>
-          <div className="comment mb-4 text-justify float-left">
-            <h4 className="heading">Keet</h4>
-            <br />
-            <p className="pt-4 pb-0 text">
-              I have a problem with accessing the video of the course in course
-              page.
-            </p>
-          </div>
-          <div className="comment mb-4 text-justify float-left">
-            <h4 className="heading">Keet</h4>
-            <br />
-            <p className="pt-4 pb-0 text">
-              I have a problem with accessing the video of the course in course
-              page.
-            </p>
-          </div>
-          <div className="comment mb-4 text-justify float-left">
-            <h4 className="heading">Keet</h4>
-            <br />
-            <p className="pt-4 pb-0 text">
-              I have a problem with accessing the video of the course in course
-              page.
-            </p>
-          </div>
-          <div className="comment mb-4 text-justify float-left">
-            <h4 className="heading">Keet</h4>
-            <br />
-            <p className="pt-4 pb-0 text">
-              I have a problem with accessing the video of the course in course
-              page.
-            </p>
-          </div> */}
         </div>
-        {/* <div className='algin-form flexbox sticky'>
-        <div className="form-group">
-        <input
-          id="comment-text"
-          type="text"
-          cols="90"
-          rows="2"
-          placeholder='What do you want to ask?'
-          className="form-control"
-          value={comment}
-          onChange={({ target }) => setComment(target.value)}
-        />
-      </div>
-      <div>
-        <button type="button" className="btnsubmit ml-5" onClick={createComment}>
-          Add
-        </button>
-      </div> */}
         </div>
         </div>
   );

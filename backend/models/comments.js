@@ -13,6 +13,11 @@ const commentsSchema = new mongoose.Schema({
      // it has to be unique: unique: true,
     required: true, // it is required
   },
+  reply: {
+    type: String, // task is a string
+     // it has to be unique: unique: true,
+    required: false, // it is required
+  },
 })
 
 const commentsModel = mongoose.model("Comments", commentsSchema) // creating the model from the schema
