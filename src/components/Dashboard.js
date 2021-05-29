@@ -53,6 +53,7 @@ export default function Dashboard() {
       </div>
       <br />
       <div className="courses container">
+        <h4 className='heading2'>Suggested Courses</h4>
         <div className="flexbox">
           <CourseCard course={0} />
           <CourseCard course={1} />

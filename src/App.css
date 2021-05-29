@@ -101,6 +101,12 @@
   font-weight: bold;
 }
 
+.heading2 {
+  color: black;
+  font-family: "Poppins", sans-serif;
+  font-weight: bold;
+}
+
 .text {
   color: black;
 }
@@ -409,4 +415,13 @@ form {
   border-style: none;
   background-color: rgb(248, 248, 248);
   width: 100%;
+}
+
+#reply-here {
+  background-color: white;
+  width: 100%;
+}
+
+.replytext {
+  padding: 2%;
 }
