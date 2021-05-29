@@ -32,6 +32,15 @@ app.post("/help", async (req, res, next) => {
   }
 })
 
+app.delete("/help/:id", async (req, res, next) => {
+  try {
+    await db.Comments.findByIdAndRemove(req.params.id)
+    return success(res, "Comment deleted")
+  } catch (err) {
+    next({ status: 400, message: "failed to delete comment" })
+  }
+})
+
 // app.delete("/help/:id", async (req, res, next) => {
 //   try {
 //     await db.Todo.findByIdAndRemove(req.params.id)

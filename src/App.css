@@ -130,6 +130,18 @@ p {
   padding-right: 3%;
 }
 
+.btndelete {
+  border-radius: 5px;
+  border-style: none;
+  width: 10.5rem;
+  height: 3rem;
+  color: white;
+  background-color: rgb(241, 142, 142);
+  padding-left: 3%;
+  padding-right: 3%;
+  margin-left: 2%;
+}
+
 .btnsubmit2 {
   border-radius: 5px;
   border-style: none;

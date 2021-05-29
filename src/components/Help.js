@@ -21,6 +21,8 @@ export default function Help() {
     fetchCommentAndSetComments()
   }, [])
 
+  
+
   const createComment = async e => {
     e.preventDefault()
     if (!comment) {
@@ -31,6 +33,13 @@ export default function Help() {
     setComments([...comments, newComment])
   }
 
+  const deleteComment = async (e, id) => {
+    try {
+      e.stopPropagation()
+      await APIHelper.deleteComment(id)
+      setComments(comments.filter(({ _id: i }) => id !== i))
+    } catch (err) {}
+  }
 
   // function postReply() {
   //   setTimeout(() => {
@@ -103,7 +112,9 @@ export default function Help() {
             </p>
         <button type="button" className="btnsubmit ml-5" >
           Add
-        </button>
+        </button> 
+        {currentUser.email == 'parthsharmabareilly@gmail.com'?  <button className='btndelete' id='crossButton' onClick={e => deleteComment(e, _id)}> Delete </button>: null }
+        {/* <button className='btndelete' id='crossButton' onClick={e => deleteComment(e, _id)}>X</button> */}
       </div>
           </div>
         ))}

@@ -18,9 +18,14 @@ async function createComment(email, comment) {
   return newComment
 }
 
+async function deleteComment(id) {
+  const message = await axios.delete(`${API_URL}${id}`)
+  return message
+}
+
 async function getAllComments() {
   const { data: comments } = await axios.get(API_URL)
   return comments
 }
 
-export default { createComment, getAllComments }
+export default { createComment, getAllComments, deleteComment }
