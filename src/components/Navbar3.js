@@ -56,7 +56,7 @@ function Navigation3() {
         <Nav className="mr-auto">
           <Nav.Link href="/">Home</Nav.Link>
           <Nav.Link href="/about">About</Nav.Link>
-          <Nav.Link href="/help">Help</Nav.Link>
+          {/* <Nav.Link href="/help">Help</Nav.Link> */}
         </Nav>
       </Navbar>
     </>
