@@ -41,14 +41,6 @@ app.delete("/help/:id", async (req, res, next) => {
   }
 })
 
-// app.delete("/help/:id", async (req, res, next) => {
-//   try {
-//     await db.Todo.findByIdAndRemove(req.params.id)
-//     return success(res, "todo deleted!")
-//   } catch (err) {
-//     next({ status: 400, message: "failed to delete todo" })
-//   }
-// })
 
 app.use((err, req, res, next) => {
   return res.status(err.status || 400).json({
