@@ -9,7 +9,7 @@ on one single platform, and also includes a help module where anyone who is logg
 ![home](https://github.com/parthsharma1410/EduLearn/blob/main/ui-screenshots/home.PNG?raw=true)
 ![about](https://github.com/parthsharma1410/EduLearn/blob/main/ui-screenshots/about.png?raw=true)
 ![dashboard](https://github.com/parthsharma1410/EduLearn/blob/main/ui-screenshots/dashboard.PNG?raw=true)
-![course-page](https://github.com/parthsharma1410/EduLearn/blob/main/ui-screenshots/course-page.PNG?raw=true)
+![course-page](https://github.com/parthsharma1410/EduLearn/blob/main/ui-screenshots/course-page.png?raw=true)
 ![help](https://github.com/parthsharma1410/EduLearn/blob/main/ui-screenshots/help.PNG?raw=true)
 ![signin](https://github.com/parthsharma1410/EduLearn/blob/main/ui-screenshots/signin.PNG?raw=true)
 ![signup](https://github.com/parthsharma1410/EduLearn/blob/main/ui-screenshots/signup.PNG?raw=true)
