@@ -13,8 +13,8 @@ on one single platform, and also includes a help module where anyone who is logg
 ![help](https://github.com/parthsharma1410/EduLearn/blob/main/ui-screenshots/help.PNG?raw=true)
 ![signin](https://github.com/parthsharma1410/EduLearn/blob/main/ui-screenshots/signin.PNG?raw=true)
 ![signup](https://github.com/parthsharma1410/EduLearn/blob/main/ui-screenshots/signup.PNG?raw=true)
-![update-profile](https://github.com/parthsharma1410/EduLearn/blob/main/ui-screenshots/update-profile.PNG?raw=true)
-![forgot-password](https://github.com/parthsharma1410/EduLearn/blob/main/ui-screenshots/forgot-password.PNG?raw=true)
+![update-profile](https://github.com/parthsharma1410/EduLearn/blob/main/ui-screenshots/update-profile.png?raw=true)
+![forgot-password](https://github.com/parthsharma1410/EduLearn/blob/main/ui-screenshots/forgot-password.png?raw=true)
 
 ## Getting Started with Create React App
 
