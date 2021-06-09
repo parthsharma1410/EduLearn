@@ -7,7 +7,7 @@ on one single platform, and also includes a help module where anyone who is logg
 ## UI-Screenshots
 
 ![home](https://github.com/parthsharma1410/EduLearn/blob/main/ui-screenshots/home.PNG?raw=true)
-![about](https://github.com/parthsharma1410/EduLearn/blob/main/ui-screenshots/about.PNG?raw=true)
+![about](https://github.com/parthsharma1410/EduLearn/blob/main/ui-screenshots/about.png?raw=true)
 ![dashboard](https://github.com/parthsharma1410/EduLearn/blob/main/ui-screenshots/dashboard.PNG?raw=true)
 ![course-page](https://github.com/parthsharma1410/EduLearn/blob/main/ui-screenshots/course-page.PNG?raw=true)
 ![help](https://github.com/parthsharma1410/EduLearn/blob/main/ui-screenshots/help.PNG?raw=true)
