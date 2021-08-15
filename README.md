@@ -2,7 +2,7 @@
 
 This is an educational website which will provide a student with all \
 important resources like theory notes and interactive video lectures \
-on one single platform, and also includes a help module where anyone who is logged in can ask questions related to any topic and anyone can reply to their queries.
+on one single platform, and it also includes a help module where anyone who is logged in can ask questions related to any topic and anyone can reply to their queries.
 
 ## UI-Screenshots
 
